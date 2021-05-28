@@ -15,7 +15,9 @@ namespace QLNS
         public string MaPhong { get; set; }
         [StringLength(30)]
         public string TenPhong { get; set; }
-        //phongban có nhiều nhân viên
+        // phongban có nhiều nhân viên
         public virtual ICollection<NhanVien> NhanViens { get; set; }
+        // phongban có nhiều DA
+        public virtual ICollection<DuAn> DuAns { get; set; }
     }
 }

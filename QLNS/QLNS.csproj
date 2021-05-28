@@ -57,7 +57,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -102,13 +104,27 @@
     <Compile Include="Migrations\202105280629466_ThreeMigration-AddTaiKhoan.designer.cs">
       <DependentUpon>202105280629466_ThreeMigration-AddTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202105281538141_FourthMigration-AddDuAn.cs" />
+    <Compile Include="Migrations\202105281538141_FourthMigration-AddDuAn.designer.cs">
+      <DependentUpon>202105281538141_FourthMigration-AddDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105281723585_FifthMigration-ManyToManyWithPhongBanTableAndDuAnTable.cs" />
+    <Compile Include="Migrations\202105281723585_FifthMigration-ManyToManyWithPhongBanTableAndDuAnTable.designer.cs">
+      <DependentUpon>202105281723585_FifthMigration-ManyToManyWithPhongBanTableAndDuAnTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202105281748001_fix-ManyToMany.cs" />
+    <Compile Include="Migrations\202105281748001_fix-ManyToMany.designer.cs">
+      <DependentUpon>202105281748001_fix-ManyToMany.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="NhanVien.cs" />
-    <Compile Include="PhongBan.cs" />
+    <Compile Include="Model\DuAn.cs" />
+    <Compile Include="Model\NhanVien.cs" />
+    <Compile Include="Model\PhongBan.cs" />
+    <Compile Include="Model\PhanCong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLNSContext.cs" />
-    <Compile Include="TaiKhoan.cs" />
+    <Compile Include="Model\TaiKhoan.cs" />
     <EmbeddedResource Include="fDangNhap.resx">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +142,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105280629466_ThreeMigration-AddTaiKhoan.resx">
       <DependentUpon>202105280629466_ThreeMigration-AddTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105281538141_FourthMigration-AddDuAn.resx">
+      <DependentUpon>202105281538141_FourthMigration-AddDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105281723585_FifthMigration-ManyToManyWithPhongBanTableAndDuAnTable.resx">
+      <DependentUpon>202105281723585_FifthMigration-ManyToManyWithPhongBanTableAndDuAnTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202105281748001_fix-ManyToMany.resx">
+      <DependentUpon>202105281748001_fix-ManyToMany.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

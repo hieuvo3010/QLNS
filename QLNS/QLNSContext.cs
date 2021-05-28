@@ -17,5 +17,7 @@ namespace QLNS
         public DbSet<NhanVien> NhanViens { get; set; }
         public DbSet<PhongBan> PhongBans { get; set; }
         public DbSet<TaiKhoan> TaiKhoans { get; set; }
+        public DbSet<DuAn> DuAns { get; set; }
+        public DbSet<PhanCong> PhanCongs { get; set; }
     }
 }
