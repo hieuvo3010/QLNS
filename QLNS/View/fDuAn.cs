@@ -20,10 +20,10 @@ namespace QLNS
         // hiện thị dspb
         private void DanhSachDuAn()
         {
-            string duan = ""; string mp = "";
+            string duan = "", mp = "";
             //lay tt tren GUI
             duan = txtTimKiemDA.Text.Trim();
-            mp = "" + cboPb.SelectedValue;
+            mp = "" + cboPbDa.SelectedValue;
             IQueryable<DuAn> lstDuAn = Common.Instance.DuAns;
 
             if (!string.IsNullOrEmpty(duan))
@@ -54,8 +54,8 @@ namespace QLNS
             string mada = "";
             // chọn hàng ngay click chuột
             mada = "" + dvgDuAn.CurrentRow.Cells[0].Value;
-            fPhongBanAdd f = new fPhongBanAdd();
-            f.PhongBanID = mada;
+            fDuAnAdd f = new fDuAnAdd();
+            f.DuAnID = mada;
             f.ShowDialog();
             //hiện thị lại ds nv
             DanhSachDuAn();
@@ -103,9 +103,9 @@ namespace QLNS
         {
             List<PhongBan> lstPhongBan = Common.Instance.PhongBans.ToList();
             lstPhongBan.Insert(0, new PhongBan() { MaPhong = "", TenPhong = "--CHỌN PHÒNG--" });
-            cboPb.DisplayMember = "TenPhong";
-            cboPb.ValueMember = "MaPhong";
-            cboPb.DataSource = lstPhongBan;
+            cboPbDa.DisplayMember = "TenPhong";
+            cboPbDa.ValueMember = "MaPhong";
+            cboPbDa.DataSource = lstPhongBan;
 
         }
     }

@@ -50,3 +50,5 @@ C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fDuAn.resources
 C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fPhongBan.resources
 C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fPhongBanAdd.resources
 C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fDuAnAdd.resources
+C:\Users\Hieu Vo\Desktop\qlns\QLNS\obj\Debug\QLNS.fPhanCong.resources
+C:\Users\Hieu Vo\Desktop\qlns\QLNS\obj\Debug\QLNS.fPhanCongAdd.resources

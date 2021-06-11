@@ -37,12 +37,12 @@ namespace QLNS
             this.btnSuaDA = new System.Windows.Forms.Button();
             this.btnThemDA = new System.Windows.Forms.Button();
             this.dvgDuAn = new System.Windows.Forms.DataGridView();
-            this.cboPb = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.MaDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhongBanId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cboPbDa = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvgDuAn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,23 +127,6 @@ namespace QLNS
             this.dvgDuAn.Size = new System.Drawing.Size(788, 315);
             this.dvgDuAn.TabIndex = 8;
             // 
-            // cboPb
-            // 
-            this.cboPb.FormattingEnabled = true;
-            this.cboPb.Location = new System.Drawing.Point(430, 21);
-            this.cboPb.Name = "cboPb";
-            this.cboPb.Size = new System.Drawing.Size(165, 24);
-            this.cboPb.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(343, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 17);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Phòng ban:";
-            // 
             // MaDA
             // 
             this.MaDA.DataPropertyName = "MaDA";
@@ -176,12 +159,29 @@ namespace QLNS
             this.PhongBanId.Name = "PhongBanId";
             this.PhongBanId.Width = 125;
             // 
+            // cboPbDa
+            // 
+            this.cboPbDa.FormattingEnabled = true;
+            this.cboPbDa.Location = new System.Drawing.Point(430, 21);
+            this.cboPbDa.Name = "cboPbDa";
+            this.cboPbDa.Size = new System.Drawing.Size(165, 24);
+            this.cboPbDa.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(343, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 17);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Phòng ban:";
+            // 
             // fDuAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cboPb);
+            this.Controls.Add(this.cboPbDa);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnTimKiemDA);
             this.Controls.Add(this.label1);
@@ -210,7 +210,7 @@ namespace QLNS
         private System.Windows.Forms.Button btnSuaDA;
         private System.Windows.Forms.Button btnThemDA;
         private System.Windows.Forms.DataGridView dvgDuAn;
-        private System.Windows.Forms.ComboBox cboPb;
+        private System.Windows.Forms.ComboBox cboPbDa;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDA;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDA;

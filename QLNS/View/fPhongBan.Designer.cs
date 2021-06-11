@@ -44,7 +44,7 @@ namespace QLNS
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(353, 20);
+            this.btnTimKiem.Location = new System.Drawing.Point(385, 12);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(88, 38);
             this.btnTimKiem.TabIndex = 23;
@@ -55,15 +55,15 @@ namespace QLNS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 31);
+            this.label1.Location = new System.Drawing.Point(73, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 17);
+            this.label1.Size = new System.Drawing.Size(109, 17);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Phòng ban:";
+            this.label1.Text = "Tên phòng ban:";
             // 
             // txtPhongBan
             // 
-            this.txtPhongBan.Location = new System.Drawing.Point(156, 31);
+            this.txtPhongBan.Location = new System.Drawing.Point(188, 23);
             this.txtPhongBan.Name = "txtPhongBan";
             this.txtPhongBan.Size = new System.Drawing.Size(152, 22);
             this.txtPhongBan.TabIndex = 21;

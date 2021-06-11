@@ -104,7 +104,7 @@ namespace QLNS
 
                 //Luu su thay doi
                 Common.Instance.SaveChanges();
-                MessageBox.Show("Cập nhật thông tin thành công", "Thông báo");
+                MessageBox.Show("Lưu thông tin thành công", "Thông báo");
                 this.Close();
             }
             catch (Exception ex)

@@ -80,6 +80,18 @@
     <Compile Include="fDuAnAdd.Designer.cs">
       <DependentUpon>fDuAnAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPhanCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhanCong.Designer.cs">
+      <DependentUpon>fPhanCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhanCongAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhanCongAdd.Designer.cs">
+      <DependentUpon>fPhanCongAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\fDuAn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +169,12 @@
     <Compile Include="Model\TaiKhoan.cs" />
     <EmbeddedResource Include="fDuAnAdd.resx">
       <DependentUpon>fDuAnAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhanCong.resx">
+      <DependentUpon>fPhanCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhanCongAdd.resx">
+      <DependentUpon>fPhanCongAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\fDuAn.resx">
       <DependentUpon>fDuAn.cs</DependentUpon>

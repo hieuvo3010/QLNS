@@ -51,20 +51,21 @@ namespace QLNS
         // hiện thị dsnv
         private void DanhSachNhanVien()
         {
-            string hoten = "", maphong = "";
+            string hoten = "", maphong = "",manv= "";
             //lay tt tren GUI
-            hoten = txtHoTen.Text.Trim();
+            manv = txtHoTen.Text.Trim();
             maphong = "" + cboPb.SelectedValue;
             IQueryable<NhanVien> lstNhanVien = Common.Instance.NhanViens;
 
-            if (!string.IsNullOrEmpty(hoten))
+            if (!string.IsNullOrEmpty(manv))
             {
-                lstNhanVien = lstNhanVien.Where(p => p.HoTen.Contains(hoten));
+                lstNhanVien = lstNhanVien.Where(p => p.MaNV.Contains(manv));
+
             }
+
             if (!string.IsNullOrEmpty(maphong))
             {
                 lstNhanVien = lstNhanVien.Where(p => p.PhongBanId == maphong);
-
             }
             // chỉ hiện thị tt cần thiết
             dgvNhanVien.AutoGenerateColumns = false;

@@ -51,5 +51,11 @@ namespace QLNS
             fDuAn f = new fDuAn();
             AddForm(f);
         }
+
+        private void phânCôngDựÁnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fPhanCong f = new fPhanCong();
+            AddForm(f);
+        }
     }
 }
