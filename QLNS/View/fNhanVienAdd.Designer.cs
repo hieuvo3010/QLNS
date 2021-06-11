@@ -72,7 +72,7 @@ namespace QLNS
             // 
             // btnDong
             // 
-            this.btnDong.Location = new System.Drawing.Point(322, 313);
+            this.btnDong.Location = new System.Drawing.Point(322, 304);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(75, 30);
             this.btnDong.TabIndex = 13;
@@ -82,7 +82,7 @@ namespace QLNS
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.Location = new System.Drawing.Point(221, 313);
+            this.btnCapNhat.Location = new System.Drawing.Point(222, 304);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(80, 30);
             this.btnCapNhat.TabIndex = 12;

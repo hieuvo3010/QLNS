@@ -23,6 +23,16 @@ namespace QLNS
             InitializeComponent();
         }
 
+        // hiện thị ds pb
+        private void DanhSachPhongBan()
+        {
+            List<PhongBan> lstPhongBan = Common.Instance.PhongBans.ToList();
+            lstPhongBan.Insert(0, new PhongBan() { MaPhong = "", TenPhong = "--CHỌN PHÒNG--" });
+            cboPhong.DisplayMember = "TenPhong";
+            cboPhong.ValueMember = "MaPhong";
+            cboPhong.DataSource = lstPhongBan;
+
+        }
         private void fNhanVienAdd_Load(object sender, EventArgs e)
         {
             DanhSachPhongBan();
@@ -59,16 +69,7 @@ namespace QLNS
 
         }
 
-        // hiện thị ds pb
-        private void DanhSachPhongBan()
-        {
-            List<PhongBan> lstPhongBan = Common.Instance.PhongBans.ToList();
-            lstPhongBan.Insert(0, new PhongBan() { MaPhong = "", TenPhong = "--CHỌN PHÒNG--" });
-            cboPhong.DisplayMember = "TenPhong";
-            cboPhong.ValueMember = "MaPhong";
-            cboPhong.DataSource = lstPhongBan;
-
-        }
+        
         //Cập nhật thêm mới, xoá,sửa tt nhân viên
         private void btnCapNhat_Click(object sender, EventArgs e)
         {

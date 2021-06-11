@@ -74,22 +74,52 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common.cs" />
-    <Compile Include="fDangNhap.cs">
+    <Compile Include="fDuAnAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fDangNhap.Designer.cs">
+    <Compile Include="fDuAnAdd.Designer.cs">
+      <DependentUpon>fDuAnAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fDuAn.Designer.cs">
+      <DependentUpon>fDuAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fMain.Designer.cs">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fPhongBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fPhongBan.Designer.cs">
+      <DependentUpon>fPhongBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fPhongBanAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fPhongBanAdd.Designer.cs">
+      <DependentUpon>fPhongBanAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fDangNhap.Designer.cs">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="fNhanVien.cs">
+    <Compile Include="View\fNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fNhanVien.Designer.cs">
+    <Compile Include="View\fNhanVien.Designer.cs">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="fNhanVienAdd.cs">
+    <Compile Include="View\fNhanVienAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fNhanVienAdd.Designer.cs">
+    <Compile Include="View\fNhanVienAdd.Designer.cs">
       <DependentUpon>fNhanVienAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202105260651150_FirstMigration.cs" />
@@ -125,13 +155,28 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLNSContext.cs" />
     <Compile Include="Model\TaiKhoan.cs" />
-    <EmbeddedResource Include="fDangNhap.resx">
+    <EmbeddedResource Include="fDuAnAdd.resx">
+      <DependentUpon>fDuAnAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fDuAn.resx">
+      <DependentUpon>fDuAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fMain.resx">
+      <DependentUpon>fMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fPhongBan.resx">
+      <DependentUpon>fPhongBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fPhongBanAdd.resx">
+      <DependentUpon>fPhongBanAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fDangNhap.resx">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fNhanVien.resx">
+    <EmbeddedResource Include="View\fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fNhanVienAdd.resx">
+    <EmbeddedResource Include="View\fNhanVienAdd.resx">
       <DependentUpon>fNhanVienAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105260651150_FirstMigration.resx">

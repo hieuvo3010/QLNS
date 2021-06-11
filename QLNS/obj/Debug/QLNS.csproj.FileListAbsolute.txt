@@ -45,3 +45,8 @@ C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.pdb
 C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.Migrations.FourthMigrationAddDuAn.resources
 C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.Migrations.FifthMigrationManyToManyWithPhongBanTableAndDuAnTable.resources
 C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.Migrations.fixManyToMany.resources
+C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fMain.resources
+C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fDuAn.resources
+C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fPhongBan.resources
+C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fPhongBanAdd.resources
+C:\Users\Hieu Vo\Desktop\QLNS\QLNS\obj\Debug\QLNS.fDuAnAdd.resources
