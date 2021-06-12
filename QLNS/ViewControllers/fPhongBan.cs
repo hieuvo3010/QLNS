@@ -19,6 +19,12 @@ namespace QLNS
 
         private void fPhongBan_Load(object sender, EventArgs e)
         {
+            if (fDangNhap.Quyen == "user")
+            {
+                btnXoa.Visible = false;
+                btnSua.Visible = false;
+                btnThem.Visible = false;
+            }
             DanhSachPhongBan();
         }
 

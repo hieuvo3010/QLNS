@@ -49,7 +49,7 @@ namespace QLNS
             this.quảnLýToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(845, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(818, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,7 +64,7 @@ namespace QLNS
             // thoátToolStripMenuItem
             // 
             this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
             this.thoátToolStripMenuItem.Text = "Thoát";
             this.thoátToolStripMenuItem.Click += new System.EventHandler(this.thoátToolStripMenuItem_Click);
             // 
@@ -82,28 +82,28 @@ namespace QLNS
             // nhânViênToolStripMenuItem
             // 
             this.nhânViênToolStripMenuItem.Name = "nhânViênToolStripMenuItem";
-            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.nhânViênToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.nhânViênToolStripMenuItem.Text = "Nhân viên";
             this.nhânViênToolStripMenuItem.Click += new System.EventHandler(this.nhânViênToolStripMenuItem_Click);
             // 
             // phòngBanToolStripMenuItem
             // 
             this.phòngBanToolStripMenuItem.Name = "phòngBanToolStripMenuItem";
-            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.phòngBanToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.phòngBanToolStripMenuItem.Text = "Phòng ban";
             this.phòngBanToolStripMenuItem.Click += new System.EventHandler(this.phòngBanToolStripMenuItem_Click);
             // 
             // dựÁnToolStripMenuItem
             // 
             this.dựÁnToolStripMenuItem.Name = "dựÁnToolStripMenuItem";
-            this.dựÁnToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.dựÁnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.dựÁnToolStripMenuItem.Text = "Dự án";
             this.dựÁnToolStripMenuItem.Click += new System.EventHandler(this.dựÁnToolStripMenuItem_Click);
             // 
             // phânCôngDựÁnToolStripMenuItem
             // 
             this.phânCôngDựÁnToolStripMenuItem.Name = "phânCôngDựÁnToolStripMenuItem";
-            this.phânCôngDựÁnToolStripMenuItem.Size = new System.Drawing.Size(203, 26);
+            this.phânCôngDựÁnToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.phânCôngDựÁnToolStripMenuItem.Text = "Phân công dự án";
             this.phânCôngDựÁnToolStripMenuItem.Click += new System.EventHandler(this.phânCôngDựÁnToolStripMenuItem_Click);
             // 
@@ -111,19 +111,21 @@ namespace QLNS
             // 
             this.pnlContent.Location = new System.Drawing.Point(0, 31);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(845, 442);
+            this.pnlContent.Size = new System.Drawing.Size(818, 484);
             this.pnlContent.TabIndex = 1;
             // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 471);
+            this.ClientSize = new System.Drawing.Size(818, 515);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fMain";
-            this.Text = "fMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Phần mềm quản lý nhân sự";
+            this.Load += new System.EventHandler(this.fMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

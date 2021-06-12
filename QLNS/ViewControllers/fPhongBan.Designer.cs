@@ -32,7 +32,6 @@ namespace QLNS
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtPhongBan = new System.Windows.Forms.TextBox();
-            this.btnDong = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
@@ -68,19 +67,9 @@ namespace QLNS
             this.txtPhongBan.Size = new System.Drawing.Size(152, 22);
             this.txtPhongBan.TabIndex = 21;
             // 
-            // btnDong
-            // 
-            this.btnDong.Location = new System.Drawing.Point(706, 404);
-            this.btnDong.Name = "btnDong";
-            this.btnDong.Size = new System.Drawing.Size(88, 38);
-            this.btnDong.TabIndex = 20;
-            this.btnDong.Text = "Đóng";
-            this.btnDong.UseVisualStyleBackColor = true;
-            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
-            // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(601, 404);
+            this.btnXoa.Location = new System.Drawing.Point(706, 406);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(88, 38);
             this.btnXoa.TabIndex = 19;
@@ -90,7 +79,7 @@ namespace QLNS
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(493, 404);
+            this.btnSua.Location = new System.Drawing.Point(598, 406);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(88, 38);
             this.btnSua.TabIndex = 18;
@@ -100,7 +89,7 @@ namespace QLNS
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(385, 404);
+            this.btnThem.Location = new System.Drawing.Point(490, 406);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(88, 38);
             this.btnThem.TabIndex = 17;
@@ -123,19 +112,19 @@ namespace QLNS
             // 
             // MaPhong
             // 
+            this.MaPhong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.MaPhong.DataPropertyName = "MaPhong";
             this.MaPhong.HeaderText = "Mã phòng ban";
             this.MaPhong.MinimumWidth = 6;
             this.MaPhong.Name = "MaPhong";
-            this.MaPhong.Width = 125;
             // 
             // TenPhong
             // 
+            this.TenPhong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TenPhong.DataPropertyName = "TenPhong";
             this.TenPhong.HeaderText = "Tên phòng ban";
             this.TenPhong.MinimumWidth = 6;
             this.TenPhong.Name = "TenPhong";
-            this.TenPhong.Width = 125;
             // 
             // fPhongBan
             // 
@@ -145,13 +134,12 @@ namespace QLNS
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPhongBan);
-            this.Controls.Add(this.btnDong);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.dgvPhongBan);
             this.Name = "fPhongBan";
-            this.Text = "fPhongBan";
+            this.Text = "Phòng ban";
             this.Load += new System.EventHandler(this.fPhongBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhongBan)).EndInit();
             this.ResumeLayout(false);
@@ -164,7 +152,6 @@ namespace QLNS
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtPhongBan;
-        private System.Windows.Forms.Button btnDong;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;

@@ -117,7 +117,8 @@ namespace QLNS
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Hide();
-            fDangNhap f = new fDangNhap();
+            this.Close();
+            fMain f = new fMain();
             f.Show();
         }
     }

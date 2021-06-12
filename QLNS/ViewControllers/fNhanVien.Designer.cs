@@ -35,7 +35,6 @@ namespace QLNS
             this.btnThem = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.cboPb = new System.Windows.Forms.ComboBox();
             this.txtHoTen = new System.Windows.Forms.TextBox();
@@ -85,7 +84,7 @@ namespace QLNS
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(418, 421);
+            this.btnThem.Location = new System.Drawing.Point(540, 421);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 35);
             this.btnThem.TabIndex = 4;
@@ -95,7 +94,7 @@ namespace QLNS
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(511, 418);
+            this.btnSua.Location = new System.Drawing.Point(633, 418);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 38);
             this.btnSua.TabIndex = 5;
@@ -105,23 +104,13 @@ namespace QLNS
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(604, 418);
+            this.btnXoa.Location = new System.Drawing.Point(726, 418);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 38);
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(700, 417);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 38);
-            this.btnClose.TabIndex = 7;
-            this.btnClose.Text = "Đóng";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnTimKiem
             // 
@@ -150,51 +139,51 @@ namespace QLNS
             // 
             // MaNV
             // 
+            this.MaNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.MaNV.DataPropertyName = "MaNV";
             this.MaNV.HeaderText = "Mã NV";
             this.MaNV.MinimumWidth = 6;
             this.MaNV.Name = "MaNV";
-            this.MaNV.Width = 125;
             // 
             // HoTen
             // 
+            this.HoTen.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.HoTen.DataPropertyName = "HoTen";
             this.HoTen.HeaderText = "Họ tên";
             this.HoTen.MinimumWidth = 6;
             this.HoTen.Name = "HoTen";
-            this.HoTen.Width = 125;
             // 
             // NgaySinh
             // 
+            this.NgaySinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.NgaySinh.DataPropertyName = "NgaySinh";
             this.NgaySinh.HeaderText = "Ngày sinh";
             this.NgaySinh.MinimumWidth = 6;
             this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Width = 125;
             // 
             // Email
             // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Email.DataPropertyName = "Email";
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
-            this.Email.Width = 125;
             // 
             // DiaChi
             // 
+            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.DiaChi.DataPropertyName = "DiaChi";
             this.DiaChi.HeaderText = "Địa chỉ";
             this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 125;
             // 
             // PhongBanId
             // 
+            this.PhongBanId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.PhongBanId.DataPropertyName = "PhongBanId";
             this.PhongBanId.HeaderText = "Phòng ban";
             this.PhongBanId.MinimumWidth = 6;
             this.PhongBanId.Name = "PhongBanId";
-            this.PhongBanId.Width = 125;
             // 
             // fNhanVien
             // 
@@ -204,7 +193,6 @@ namespace QLNS
             this.Controls.Add(this.txtHoTen);
             this.Controls.Add(this.cboPb);
             this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
@@ -213,7 +201,7 @@ namespace QLNS
             this.Controls.Add(this.dgvNhanVien);
             this.Name = "fNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Nhân viên";
             this.Load += new System.EventHandler(this.fNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
             this.ResumeLayout(false);
@@ -229,7 +217,6 @@ namespace QLNS
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.ComboBox cboPb;
         private System.Windows.Forms.TextBox txtHoTen;

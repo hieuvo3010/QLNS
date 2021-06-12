@@ -94,6 +94,12 @@ namespace QLNS
 
         private void fDuAn_Load(object sender, EventArgs e)
         {
+            if (fDangNhap.Quyen == "user")
+            {
+                btnSuaDA.Visible = false;
+                btnThemDA.Visible = false;
+                btnXoaDA.Visible = false;
+            }
             DanhSachDuAn();
             DanhSachPhongBan();
         }

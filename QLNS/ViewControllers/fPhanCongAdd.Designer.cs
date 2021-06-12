@@ -123,6 +123,7 @@ namespace QLNS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "fPhanCongAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fPhanCongAdd";
             this.Load += new System.EventHandler(this.fPhanCongAdd_Load);
             this.ResumeLayout(false);

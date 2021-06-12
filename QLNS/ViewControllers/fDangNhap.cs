@@ -34,11 +34,12 @@ namespace QLNS
             {
                 var check = Common.Instance.TaiKhoans.Where(p => p.TenDangNhap == tk && p.MatKhau == mk).FirstOrDefault();
 
-                Quyen = check.Quyen;
+                
 
                 if (check != null)
                 {
-                    fNhanVien f = new fNhanVien();           
+                    Quyen = check.Quyen;
+                    fMain f = new fMain();           
                     this.Hide();
                     f.ShowDialog();
                 }

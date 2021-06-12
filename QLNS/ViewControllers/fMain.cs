@@ -37,7 +37,10 @@ namespace QLNS
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
+            this.Hide();
+            fDangNhap f = new fDangNhap();
+            f.ShowDialog();
         }
 
         private void phòngBanToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,6 +58,12 @@ namespace QLNS
         private void phânCôngDựÁnToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fPhanCong f = new fPhanCong();
+            AddForm(f);
+        }
+
+        private void fMain_Load(object sender, EventArgs e)
+        {
+            fWelcome f = new fWelcome();
             AddForm(f);
         }
     }

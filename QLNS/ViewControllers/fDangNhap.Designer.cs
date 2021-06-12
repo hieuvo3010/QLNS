@@ -111,9 +111,10 @@ namespace QLNS
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMatkhau);
             this.Controls.Add(this.txtTaiKhoan);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "fDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "fDangNhap";
+            this.Text = "Đăng nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 

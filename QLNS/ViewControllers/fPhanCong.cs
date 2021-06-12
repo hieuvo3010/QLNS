@@ -20,6 +20,12 @@ namespace QLNS
 
         private void fPhanCong_Load(object sender, EventArgs e)
         {
+            if (fDangNhap.Quyen == "user")
+            {
+                btnXoa.Visible = false;
+                btnSua.Visible = false;
+                btnThem.Visible = false;
+            }
             DanhSachNhanVien();
             DanhSachDuAn();
             DanhSachPhanCong();

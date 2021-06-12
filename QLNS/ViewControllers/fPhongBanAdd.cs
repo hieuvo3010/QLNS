@@ -23,42 +23,53 @@ namespace QLNS
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            try
+            if (txtMaPB.Text == "" || txtTenPB.Text == "")
             {
-                bool isInsert = true;
-                PhongBan objPhongBan = null;
-                if (!string.IsNullOrEmpty(_PhongBanID))
-                {
-                    objPhongBan = Common.Instance.PhongBans.Find(_PhongBanID);
-                }
+                MessageBox.Show("Mời nhập đầy đủ dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
-                if (objPhongBan != null)
+            }
+            else
+            {
+                try
                 {
-                    isInsert = false;
+                    bool isInsert = true;
+                    PhongBan objPhongBan = null;
+                    if (!string.IsNullOrEmpty(_PhongBanID))
+                    {
+                        objPhongBan = Common.Instance.PhongBans.Find(_PhongBanID);
+                    }
+
+                    if (objPhongBan != null)
+                    {
+                        isInsert = false;
+                    }
+                    else
+                    {
+                        objPhongBan = new PhongBan();
+                    }
+                    objPhongBan.MaPhong = txtMaPB.Text;
+                    objPhongBan.TenPhong = txtTenPB.Text;
+
+
+                    if (isInsert)
+                    {
+                        Common.Instance.PhongBans.Add(objPhongBan);
+                    }
+
+                    //Luu su thay doi
+                    Common.Instance.SaveChanges();
+                    MessageBox.Show("Lưu thông tin thành công", "Thông báo");
+                    this.Close();
                 }
-                else
+                catch (Exception ex)
                 {
-                    objPhongBan = new PhongBan();
+
+                    throw ex;
                 }
-                objPhongBan.MaPhong = txtMaPB.Text;
-                objPhongBan.TenPhong = txtTenPB.Text;
+            }
+
+            
                 
-
-                if (isInsert)
-                {
-                    Common.Instance.PhongBans.Add(objPhongBan);
-                }
-
-                //Luu su thay doi
-                Common.Instance.SaveChanges();
-                MessageBox.Show("Cập nhật thông tin thành công", "Thông báo");
-                this.Close();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
         }
 
         private void fPhongBanAdd_Load(object sender, EventArgs e)
@@ -73,7 +84,6 @@ namespace QLNS
                 this.Text = "Thêm mới thông tin phòng ban";
             }
         }
-
         private void HienThiChiTietPhongBan()
         {
             PhongBan objPhongBan = Common.Instance.PhongBans.Find(_PhongBanID);
@@ -81,6 +91,7 @@ namespace QLNS
             {
                 // hiện thị thông tin lên giao diện
                 txtMaPB.Text = objPhongBan.MaPhong;
+                txtMaPB.ReadOnly = true;
                 txtTenPB.Text = objPhongBan.TenPhong;
             }
 

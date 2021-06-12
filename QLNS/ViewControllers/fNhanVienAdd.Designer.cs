@@ -86,7 +86,7 @@ namespace QLNS
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(80, 30);
             this.btnCapNhat.TabIndex = 12;
-            this.btnCapNhat.Text = "Cập nhật";
+            this.btnCapNhat.Text = "Lưu ";
             this.btnCapNhat.UseVisualStyleBackColor = true;
             this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
@@ -196,6 +196,7 @@ namespace QLNS
             this.ClientSize = new System.Drawing.Size(447, 349);
             this.Controls.Add(this.groupBox1);
             this.Name = "fNhanVienAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fNhanVienAdd";
             this.Load += new System.EventHandler(this.fNhanVienAdd_Load);
             this.groupBox1.ResumeLayout(false);

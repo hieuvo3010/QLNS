@@ -37,13 +37,11 @@ namespace QLNS
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDiaDiem = new System.Windows.Forms.TextBox();
-            this.cboPhong = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnDongDA
             // 
-            this.btnDongDA.Location = new System.Drawing.Point(308, 226);
+            this.btnDongDA.Location = new System.Drawing.Point(308, 171);
             this.btnDongDA.Name = "btnDongDA";
             this.btnDongDA.Size = new System.Drawing.Size(75, 30);
             this.btnDongDA.TabIndex = 21;
@@ -53,11 +51,11 @@ namespace QLNS
             // 
             // btnCapNhatDA
             // 
-            this.btnCapNhatDA.Location = new System.Drawing.Point(208, 226);
+            this.btnCapNhatDA.Location = new System.Drawing.Point(208, 171);
             this.btnCapNhatDA.Name = "btnCapNhatDA";
             this.btnCapNhatDA.Size = new System.Drawing.Size(80, 30);
             this.btnCapNhatDA.TabIndex = 20;
-            this.btnCapNhatDA.Text = "Cập nhật";
+            this.btnCapNhatDA.Text = "Lưu";
             this.btnCapNhatDA.UseVisualStyleBackColor = true;
             this.btnCapNhatDA.Click += new System.EventHandler(this.btnCapNhatDA_Click);
             // 
@@ -109,31 +107,11 @@ namespace QLNS
             this.txtDiaDiem.Size = new System.Drawing.Size(239, 22);
             this.txtDiaDiem.TabIndex = 22;
             // 
-            // cboPhong
-            // 
-            this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(144, 165);
-            this.cboPhong.Name = "cboPhong";
-            this.cboPhong.Size = new System.Drawing.Size(239, 24);
-            this.cboPhong.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 174);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Phòng:";
-
-            // 
             // fDuAnAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 273);
-            this.Controls.Add(this.cboPhong);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(417, 223);
             this.Controls.Add(this.txtDiaDiem);
             this.Controls.Add(this.btnDongDA);
             this.Controls.Add(this.btnCapNhatDA);
@@ -143,6 +121,7 @@ namespace QLNS
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Name = "fDuAnAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fDuAnAdd";
             this.Load += new System.EventHandler(this.fDuAnAdd_Load);
             this.ResumeLayout(false);
@@ -160,7 +139,5 @@ namespace QLNS
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDiaDiem;
-        private System.Windows.Forms.ComboBox cboPhong;
-        private System.Windows.Forms.Label label1;
     }
 }

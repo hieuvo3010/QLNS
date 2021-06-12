@@ -73,65 +73,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common.cs" />
-    <Compile Include="fDuAnAdd.cs">
+    <Compile Include="Db\Common.cs" />
+    <Compile Include="ViewControllers\fDuAnAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fDuAnAdd.Designer.cs">
+    <Compile Include="ViewControllers\fDuAnAdd.Designer.cs">
       <DependentUpon>fDuAnAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPhanCong.cs">
+    <Compile Include="ViewControllers\fPhanCong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fPhanCong.Designer.cs">
+    <Compile Include="ViewControllers\fPhanCong.Designer.cs">
       <DependentUpon>fPhanCong.cs</DependentUpon>
     </Compile>
-    <Compile Include="fPhanCongAdd.cs">
+    <Compile Include="ViewControllers\fPhanCongAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fPhanCongAdd.Designer.cs">
+    <Compile Include="ViewControllers\fPhanCongAdd.Designer.cs">
       <DependentUpon>fPhanCongAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fDuAn.cs">
+    <Compile Include="ViewControllers\fWelcome.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fDuAn.Designer.cs">
+    <Compile Include="ViewControllers\fWelcome.Designer.cs">
+      <DependentUpon>fWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\fDuAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewControllers\fDuAn.Designer.cs">
       <DependentUpon>fDuAn.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fMain.cs">
+    <Compile Include="ViewControllers\fMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fMain.Designer.cs">
+    <Compile Include="ViewControllers\fMain.Designer.cs">
       <DependentUpon>fMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fPhongBan.cs">
+    <Compile Include="ViewControllers\fPhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fPhongBan.Designer.cs">
+    <Compile Include="ViewControllers\fPhongBan.Designer.cs">
       <DependentUpon>fPhongBan.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fPhongBanAdd.cs">
+    <Compile Include="ViewControllers\fPhongBanAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fPhongBanAdd.Designer.cs">
+    <Compile Include="ViewControllers\fPhongBanAdd.Designer.cs">
       <DependentUpon>fPhongBanAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fDangNhap.cs">
+    <Compile Include="ViewControllers\fDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fDangNhap.Designer.cs">
+    <Compile Include="ViewControllers\fDangNhap.Designer.cs">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fNhanVien.cs">
+    <Compile Include="ViewControllers\fNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fNhanVien.Designer.cs">
+    <Compile Include="ViewControllers\fNhanVien.Designer.cs">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\fNhanVienAdd.cs">
+    <Compile Include="ViewControllers\fNhanVienAdd.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\fNhanVienAdd.Designer.cs">
+    <Compile Include="ViewControllers\fNhanVienAdd.Designer.cs">
       <DependentUpon>fNhanVienAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202105260651150_FirstMigration.cs" />
@@ -165,36 +171,39 @@
     <Compile Include="Model\PhanCong.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLNSContext.cs" />
+    <Compile Include="Db\QLNSContext.cs" />
     <Compile Include="Model\TaiKhoan.cs" />
-    <EmbeddedResource Include="fDuAnAdd.resx">
+    <EmbeddedResource Include="ViewControllers\fDuAnAdd.resx">
       <DependentUpon>fDuAnAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPhanCong.resx">
+    <EmbeddedResource Include="ViewControllers\fPhanCong.resx">
       <DependentUpon>fPhanCong.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fPhanCongAdd.resx">
+    <EmbeddedResource Include="ViewControllers\fPhanCongAdd.resx">
       <DependentUpon>fPhanCongAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fDuAn.resx">
+    <EmbeddedResource Include="ViewControllers\fWelcome.resx">
+      <DependentUpon>fWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewControllers\fDuAn.resx">
       <DependentUpon>fDuAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fMain.resx">
+    <EmbeddedResource Include="ViewControllers\fMain.resx">
       <DependentUpon>fMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fPhongBan.resx">
+    <EmbeddedResource Include="ViewControllers\fPhongBan.resx">
       <DependentUpon>fPhongBan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fPhongBanAdd.resx">
+    <EmbeddedResource Include="ViewControllers\fPhongBanAdd.resx">
       <DependentUpon>fPhongBanAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fDangNhap.resx">
+    <EmbeddedResource Include="ViewControllers\fDangNhap.resx">
       <DependentUpon>fDangNhap.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fNhanVien.resx">
+    <EmbeddedResource Include="ViewControllers\fNhanVien.resx">
       <DependentUpon>fNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\fNhanVienAdd.resx">
+    <EmbeddedResource Include="ViewControllers\fNhanVienAdd.resx">
       <DependentUpon>fNhanVienAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202105260651150_FirstMigration.resx">
@@ -223,6 +232,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -246,6 +256,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>qlns.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\QLNS.png" />
+    <None Include="Resources\QLNSs.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

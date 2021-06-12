@@ -30,18 +30,17 @@ namespace QLNS
         private void InitializeComponent()
         {
             this.dgvPhanCong = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdDuAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cboDa = new System.Windows.Forms.ComboBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbMaNV = new System.Windows.Forms.ComboBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdDuAn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhanCong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,30 +57,6 @@ namespace QLNS
             this.dgvPhanCong.RowTemplate.Height = 24;
             this.dgvPhanCong.Size = new System.Drawing.Size(800, 338);
             this.dgvPhanCong.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Mã dự án";
-            this.Id.MinimumWidth = 6;
-            this.Id.Name = "Id";
-            this.Id.Width = 125;
-            // 
-            // IdNhanVien
-            // 
-            this.IdNhanVien.DataPropertyName = "IdNhanVien";
-            this.IdNhanVien.HeaderText = "Mã nhân viên";
-            this.IdNhanVien.MinimumWidth = 6;
-            this.IdNhanVien.Name = "IdNhanVien";
-            this.IdNhanVien.Width = 125;
-            // 
-            // IdDuAn
-            // 
-            this.IdDuAn.DataPropertyName = "IdDuAn";
-            this.IdDuAn.HeaderText = "Mã dự án";
-            this.IdDuAn.MinimumWidth = 6;
-            this.IdDuAn.Name = "IdDuAn";
-            this.IdDuAn.Width = 125;
             // 
             // cboDa
             // 
@@ -127,19 +102,9 @@ namespace QLNS
             this.cbMaNV.Size = new System.Drawing.Size(165, 24);
             this.cbMaNV.TabIndex = 9;
             // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(692, 417);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 38);
-            this.btnClose.TabIndex = 13;
-            this.btnClose.Text = "Đóng";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(596, 418);
+            this.btnXoa.Location = new System.Drawing.Point(727, 418);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 38);
             this.btnXoa.TabIndex = 12;
@@ -149,7 +114,7 @@ namespace QLNS
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(503, 418);
+            this.btnSua.Location = new System.Drawing.Point(634, 418);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(75, 38);
             this.btnSua.TabIndex = 11;
@@ -159,7 +124,7 @@ namespace QLNS
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(410, 421);
+            this.btnThem.Location = new System.Drawing.Point(541, 421);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(75, 35);
             this.btnThem.TabIndex = 10;
@@ -167,12 +132,35 @@ namespace QLNS
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // Id
+            // 
+            this.Id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Mã dự án";
+            this.Id.MinimumWidth = 6;
+            this.Id.Name = "Id";
+            // 
+            // IdNhanVien
+            // 
+            this.IdNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IdNhanVien.DataPropertyName = "IdNhanVien";
+            this.IdNhanVien.HeaderText = "Mã nhân viên";
+            this.IdNhanVien.MinimumWidth = 6;
+            this.IdNhanVien.Name = "IdNhanVien";
+            // 
+            // IdDuAn
+            // 
+            this.IdDuAn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IdDuAn.DataPropertyName = "IdDuAn";
+            this.IdDuAn.HeaderText = "Mã dự án";
+            this.IdDuAn.MinimumWidth = 6;
+            this.IdDuAn.Name = "IdDuAn";
+            // 
             // fPhanCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 468);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnThem);
@@ -183,7 +171,7 @@ namespace QLNS
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvPhanCong);
             this.Name = "fPhanCong";
-            this.Text = "fPhanCong";
+            this.Text = "Phân công công việc";
             this.Load += new System.EventHandler(this.fPhanCong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhanCong)).EndInit();
             this.ResumeLayout(false);
@@ -199,7 +187,6 @@ namespace QLNS
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbMaNV;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;

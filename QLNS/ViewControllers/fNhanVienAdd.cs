@@ -73,44 +73,53 @@ namespace QLNS
         //Cập nhật thêm mới, xoá,sửa tt nhân viên
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
-            try
+   
+            if(txtManv.Text == "" || txtHoten.Text == "" || txtEmail.Text == "" || txtDiachi.Text == "")
             {
-                bool isInsert = true;
-                NhanVien objNhanVien = null;
-                if (!string.IsNullOrEmpty(_NhanvienID))
-                {
-                    objNhanVien = Common.Instance.NhanViens.Find(_NhanvienID);
-                }
-
-                if (objNhanVien != null)
-                {
-                    isInsert = false;
-                }
-                else
-                {
-                    objNhanVien = new NhanVien();
-                }
-                objNhanVien.MaNV = txtManv.Text;
-                objNhanVien.HoTen = txtHoten.Text;
-                objNhanVien.NgaySinh = dtpNgaysinh.Value;
-                objNhanVien.Email = txtEmail.Text;
-                objNhanVien.DiaChi = txtDiachi.Text;
-                objNhanVien.PhongBanId = "" + cboPhong.SelectedValue;
-
-                if (isInsert)
-                {
-                    Common.Instance.NhanViens.Add(objNhanVien);
-                }
-
-                //Luu su thay doi
-                Common.Instance.SaveChanges();
-                MessageBox.Show("Lưu thông tin thành công", "Thông báo");
-                this.Close();
+                MessageBox.Show("Mời nhập đầy đủ dữ liệu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+           
             }
-            catch (Exception ex)
+            else
             {
+                try
+                {
+                    bool isInsert = true;
+                    NhanVien objNhanVien = null;
+                    if (!string.IsNullOrEmpty(_NhanvienID))
+                    {
+                        objNhanVien = Common.Instance.NhanViens.Find(_NhanvienID);
+                    }
 
-                throw ex;
+                    if (objNhanVien != null)
+                    {
+                        isInsert = false;
+                    }
+                    else
+                    {
+                        objNhanVien = new NhanVien();
+                    }
+                    objNhanVien.MaNV = txtManv.Text;
+                    objNhanVien.HoTen = txtHoten.Text;
+                    objNhanVien.NgaySinh = dtpNgaysinh.Value;
+                    objNhanVien.Email = txtEmail.Text;
+                    objNhanVien.DiaChi = txtDiachi.Text;
+                    objNhanVien.PhongBanId = "" + cboPhong.SelectedValue;
+
+                    if (isInsert)
+                    {
+                        Common.Instance.NhanViens.Add(objNhanVien);
+                    }
+
+                    //Luu su thay doi
+                    Common.Instance.SaveChanges();
+                    MessageBox.Show("Lưu thông tin thành công", "Thông báo");
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+
+                    throw ex;
+                }
             }
            
 
