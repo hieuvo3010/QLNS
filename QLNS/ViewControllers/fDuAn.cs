@@ -23,7 +23,7 @@ namespace QLNS
             string duan = "", mp = "";
             //lay tt tren GUI
             duan = txtTimKiemDA.Text.Trim();
-            mp = "" + cboPbDa.SelectedValue;
+           // mp = "" + cboPbDa.SelectedValue;
             IQueryable<DuAn> lstDuAn = Common.Instance.DuAns;
 
             if (!string.IsNullOrEmpty(duan))
@@ -101,18 +101,18 @@ namespace QLNS
                 btnXoaDA.Visible = false;
             }
             DanhSachDuAn();
-            DanhSachPhongBan();
+           // DanhSachPhongBan();
         }
 
         // hiện thị ds pb
-        private void DanhSachPhongBan()
-        {
-            List<PhongBan> lstPhongBan = Common.Instance.PhongBans.ToList();
-            lstPhongBan.Insert(0, new PhongBan() { MaPhong = "", TenPhong = "--CHỌN PHÒNG--" });
-            cboPbDa.DisplayMember = "TenPhong";
-            cboPbDa.ValueMember = "MaPhong";
-            cboPbDa.DataSource = lstPhongBan;
+        //private void danhsachphongban()
+        //{
+        //    list<phongban> lstphongban = common.instance.phongbans.tolist();
+        //    lstphongban.insert(0, new phongban() { maphong = "", tenphong = "--chọn phòng--" });
+        //    cbopbda.displaymember = "tenphong";
+        //    cbopbda.valuemember = "maphong";
+        //    cbopbda.datasource = lstphongban;
 
-        }
+        //}
     }
 }

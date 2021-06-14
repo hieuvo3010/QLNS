@@ -88,6 +88,7 @@ namespace QLNS
             {
                 // hiện thị thông tin lên giao diện
                 txtMaPC.Text = objPhanCong.Id;
+                txtMaPC.ReadOnly = true;
                 cboMaNV.SelectedValue = "" + objPhanCong.IdNhanVien;
                 cboMaDA.SelectedValue = "" + objPhanCong.IdDuAn;
             }

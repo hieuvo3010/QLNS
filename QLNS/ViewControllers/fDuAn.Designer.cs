@@ -36,8 +36,6 @@ namespace QLNS
             this.btnSuaDA = new System.Windows.Forms.Button();
             this.btnThemDA = new System.Windows.Forms.Button();
             this.dvgDuAn = new System.Windows.Forms.DataGridView();
-            this.cboPbDa = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.MaDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaDiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,7 +44,7 @@ namespace QLNS
             // 
             // btnTimKiemDA
             // 
-            this.btnTimKiemDA.Location = new System.Drawing.Point(624, 16);
+            this.btnTimKiemDA.Location = new System.Drawing.Point(307, 16);
             this.btnTimKiemDA.Name = "btnTimKiemDA";
             this.btnTimKiemDA.Size = new System.Drawing.Size(88, 38);
             this.btnTimKiemDA.TabIndex = 15;
@@ -59,15 +57,15 @@ namespace QLNS
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(69, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
+            this.label1.Size = new System.Drawing.Size(71, 17);
             this.label1.TabIndex = 14;
-            this.label1.Text = "Tìm kiếm:";
+            this.label1.Text = "Mã dự án:";
             // 
             // txtTimKiemDA
             // 
             this.txtTimKiemDA.Location = new System.Drawing.Point(166, 24);
             this.txtTimKiemDA.Name = "txtTimKiemDA";
-            this.txtTimKiemDA.Size = new System.Drawing.Size(100, 22);
+            this.txtTimKiemDA.Size = new System.Drawing.Size(113, 22);
             this.txtTimKiemDA.TabIndex = 13;
             // 
             // btnXoaDA
@@ -114,23 +112,6 @@ namespace QLNS
             this.dvgDuAn.Size = new System.Drawing.Size(788, 315);
             this.dvgDuAn.TabIndex = 8;
             // 
-            // cboPbDa
-            // 
-            this.cboPbDa.FormattingEnabled = true;
-            this.cboPbDa.Location = new System.Drawing.Point(430, 21);
-            this.cboPbDa.Name = "cboPbDa";
-            this.cboPbDa.Size = new System.Drawing.Size(165, 24);
-            this.cboPbDa.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(343, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(81, 17);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Phòng ban:";
-            // 
             // MaDA
             // 
             this.MaDA.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -160,8 +141,6 @@ namespace QLNS
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.cboPbDa);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnTimKiemDA);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtTimKiemDA);
@@ -187,8 +166,6 @@ namespace QLNS
         private System.Windows.Forms.Button btnSuaDA;
         private System.Windows.Forms.Button btnThemDA;
         private System.Windows.Forms.DataGridView dvgDuAn;
-        private System.Windows.Forms.ComboBox cboPbDa;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDA;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenDA;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaDiem;

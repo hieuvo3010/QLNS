@@ -56,9 +56,9 @@ namespace QLNS
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(73, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.Size = new System.Drawing.Size(103, 17);
             this.label1.TabIndex = 22;
-            this.label1.Text = "Tên phòng ban:";
+            this.label1.Text = "Mã phòng ban:";
             // 
             // txtPhongBan
             // 

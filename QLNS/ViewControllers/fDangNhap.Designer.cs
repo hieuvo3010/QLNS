@@ -51,6 +51,7 @@ namespace QLNS
             this.txtMatkhau.Name = "txtMatkhau";
             this.txtMatkhau.Size = new System.Drawing.Size(253, 22);
             this.txtMatkhau.TabIndex = 1;
+            this.txtMatkhau.UseSystemPasswordChar = true;
             // 
             // label1
             // 
